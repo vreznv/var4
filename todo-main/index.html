@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .todo-container {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container todo-container">
+        <h2>Todo List</h2>
+        <form id="todo-form">
+            <div class="form-group">
+                <label for="todo-text">Новая задача</label>
+                <input type="text" class="form-control" id="todo-text" placeholder="Введите задачу">
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить</button>
+        </form>
+        <ul id="todo-list" class="list-group mt-3">
+            <!-- Список задач будет добавляться динамически с помощью JavaScript -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
